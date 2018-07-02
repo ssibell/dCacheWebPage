@@ -1,0 +1,114 @@
+---
+layout: no-wrapper
+---
+
+<div class="hero tall">
+  <div class="container">
+ 
+
+  <a class="site-title" href="{{site.baseurl}}/"><img src="{{site.baseurl}}/images/dCache-logo.svg" alt="Dcache.org" width="120" height="100" style="padding: 10px;"></a>
+    <h1>dCache, Your Home for <span>Data storage</span>.</h1>
+    <div class="buttons flex">
+      <div class="flex1 tar mr1m">
+        <a class="dib" href="{{site.baseurl}}/getting-started/" >Get Started</a>
+      </div>
+      <div class="flex1 tal ml1m">
+        <a class="dib" href="{{site.baseurl}}/downloads/">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="wrapper">
+    <div class="">
+      <div class="pure-g home">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="grid-container">
+            <h2 class="through-line"><a href="{{site.baseurl}}/releases/">Recent Release Notes</a></h2>
+              <ul class="post-list">
+                {% for post in site.categories.posts limit:5 %}
+                  <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                    <h2>
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    {{ post.excerpt }}
+                    <p><a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+                  </li>
+                {% endfor %}
+              </ul>
+            <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+          </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class='grid-container'>
+
+<h2 class="through-line"><a href="{{site.baseurl}}/updates/">Recent Updates</a></h2>
+           
+              <ul class="post-list">
+                {% for post in site.categories.updates limit:5 %}
+                  <li>
+		    <a class="post-meta" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		</li>
+                {% endfor %}
+              </ul>
+
+
+
+<h2 class="through-line"><a href="{{ site.baseurl }}/funding">FUNDING</a></h2>
+            <div class="text-center">
+              <a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/Bundesministerien/BMBF/_node.html"><img src="{{site.baseurl}}/images/bmbf-logo.png" alt="bundesregierung" width="120" height="60" style="padding: 10px;"></a>
+              <a href="https://en.wikipedia.org/wiki/European_Middleware_Initiative"><img src="{{site.baseurl}}/images/emi-blue1.png" alt="EMI" width="120" height="60" style="padding: 10px;"></a>
+              <a href="http://www.terascale.de/"><img src="{{site.baseurl}}/images/physicsattheterascale.png" alt="terascale" width="120" height="60" style="padding: 10px;"></a>
+
+            <h2 class="through-line"><a href="{{site.baseurl}}/news/">11TH INTERNATIONAL DCACHE WORKSHOP</a></h2>
+            WE ARE HAPPY TO ANNOUNCE THE 11TH INTERNATIONAL DCACHE WORKSHOP, COLLOCATED WITH NEIC 2017 CONFERENCE IN UMEÅ FROM 2017-05-29 TO 2017-05-30.
+              <div class="text-center"><a href="{{site.baseurl}}/news/"><img src="{{site.baseurl}}/collage.webp" alt="DCACHE WORKSHOP" width="400" height="480" style="padding: 10px;"></a>
+              
+            </div>
+
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 872454614;
+    w.google_conversion_label = "r2JLCP7BiGwQ1rOCoAM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>

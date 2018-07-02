@@ -1,0 +1,14 @@
+# Site settings
+title: dCache.org
+description: >
+  Your Home for Data storage
+baseurl: "/dcacheorg"
+#url: "https://www.dcache.org/"
+github_username: dCache 
+
+
+# Build settings
+markdown: kramdown
+safe: true
+timezone: America/Los_Angeles
+encoding: utf-8
